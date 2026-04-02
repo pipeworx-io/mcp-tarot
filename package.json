@@ -1,0 +1,14 @@
+{
+  "name": "@pipeworx/mcp-tarot",
+  "version": "1.0.0",
+  "description": "MCP server for tarot card readings and search via tarotapi.dev",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "MIT",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tarot"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-tarot.git"
+  },
+  "files": ["src"]
+}
