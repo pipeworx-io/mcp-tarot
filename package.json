@@ -1,14 +1,32 @@
 {
   "name": "@pipeworx/mcp-tarot",
-  "version": "1.0.0",
-  "description": "MCP server for tarot card readings and search via tarotapi.dev",
+  "version": "1.0.1",
+  "description": "Tarot MCP — wraps tarotapi.dev (free, no auth)",
+  "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "license": "MIT",
+  "bin": {
+    "mcp-tarot": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tarot"],
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-tarot.git"
+    "url": "git+https://github.com/pipeworx-io/mcp-tarot.git"
   },
-  "files": ["src"]
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-2489f5f5a8cce8a9d9b5df55fdda32f3efb7ca8461d4cd37b17a04d029a7367c",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+  }
 }
