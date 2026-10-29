@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-tarot",
-  "version": "1.0.2",
-  "description": "Tarot MCP — wraps tarotapi.dev (free, no auth)",
+  "version": "1.1.0",
+  "description": "Tarot MCP — Pipeworx original 78-card tarot deck (Rider–Waite–Smith tradition). Keyless, no upstream, no COGS (fleet #3426).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-tarot": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tarot"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-tarot.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/tarot",
   "pipeworx": {
-    "sourceHash": "v1-0846f4d10b65509d9e443365a6019c79d4cd79b1e2a6303822fc78ba4ef37bab",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "tarot",
+    "gatewaySlug": "tarot",
+    "sourceHash": "v1-ec203c150b016b3d9e14eb1a9bde0cc373fb86403c8007e15713fbd524109d16",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
