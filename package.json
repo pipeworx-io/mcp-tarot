@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-tarot",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tarot MCP — Pipeworx original 78-card tarot deck (Rider–Waite–Smith tradition). Keyless, no upstream, no COGS (fleet #3426).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "tarot",
     "gatewaySlug": "tarot",
-    "sourceHash": "v1-ec203c150b016b3d9e14eb1a9bde0cc373fb86403c8007e15713fbd524109d16",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-207c16f827bad0f6a4fe0cd7194e301a3f1289d11415a0a9c6404d548bfb2730",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
